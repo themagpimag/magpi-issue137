@@ -1,0 +1,32 @@
+set imap_user = "username"
+set imap_pass = "password"
+
+# SMTP server. 587 is a common port, but your provider may use another
+set smtp_url = "smtp://user@domain.tld:587/"  
+set smtp_pass = "password"
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+set from = "your@email.address"
+set realname = "Your name"
+
+# 143 is a common IMAP port but yours may differ
+set folder = "imap://subdomain.domain.tld:143"
+set spoolfile = "+INBOX"
+set postponed="+Drafts"
+
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+# Keep mail on server
+set move = no
+
+# Check for new messages once a minute
+set mail_check = 60
+
+# Reverse chronological mail listing
+set sort = "reverse-date-received"
+
+# Offer to save unsent messages as drafts
+set postpone=ask-yes
